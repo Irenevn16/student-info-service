@@ -16,8 +16,7 @@ public class StudentService {
     @Autowired
     private StudentRepository studentRepository;
 
-    @Autowired
-    private RestTemplate restTemplate;
+
 
     public ResponseEntity<?> getStudentById(Long id) {
         Optional<Student> student = studentRepository.findById(id);
